@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-10-18T21:58:28.981+02:00
-  initializedAtString: 2021-10-18T21:56:13.030+02:00
+  lastUpdatedAtString: 2021-10-18T22:28:36.634+02:00
+  initializedAtString: 2021-10-18T22:28:36.634+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/dlr21/VRstudentHub.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: 
+    name: main
+    tracking: origin/main
   currentConfigBranch:
-    name: master
+    name: main
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/dlr21/VRstudentHub.git
+    trackingBranch: main
   currentConfigRemote:
     name: origin
     url: https://github.com/dlr21/VRstudentHub.git
