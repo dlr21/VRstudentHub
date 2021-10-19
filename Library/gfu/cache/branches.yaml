@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-10-18T21:58:29.015+02:00
-  initializedAtString: 2021-10-18T21:56:23.009+02:00
+  lastUpdatedAtString: 2021-10-19T18:21:16.973+02:00
+  initializedAtString: 2021-10-19T18:21:00.440+02:00
   localBranches:
-  - name: master
-    tracking: 
-  remoteBranches: []
+  - name: main
+    tracking: origin/main
+  remoteBranches:
+  - name: origin/main
+    tracking: '[None]'
   remotes:
   - name: origin
     url: https://github.com/dlr21/VRstudentHub.git
@@ -29,17 +31,26 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - master
+    - main
     values:
-    - name: master
+    - name: main
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/dlr21/VRstudentHub.git
+      trackingBranch: main
   remoteConfigBranches:
-    keys: []
-    subKeys: []
-    subKeyValues: []
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - main
+    subKeyValues:
+    - Values:
+      - name: main
+        remote:
+          name: origin
+          url: https://github.com/dlr21/VRstudentHub.git
+        trackingBranch: 
   configRemotes:
     keys:
     - origin

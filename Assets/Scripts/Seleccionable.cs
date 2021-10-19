@@ -11,7 +11,7 @@ public class Seleccionable : MonoBehaviour
     private float selectTime = 3.0f;
     private float time = 0f;
     private GameObject child;
-    public int type;//1 nextScene //2 drag //3 selection
+    public int type;//1 nextScene //2 drag //3 selection //0 default
     public string next;
 
     private void Start()
@@ -56,6 +56,7 @@ public class Seleccionable : MonoBehaviour
 
     public void Select() {
         if (type == 1) {
+            Debug.Log(next);
             SceneManager.LoadScene(next);
         }
     }

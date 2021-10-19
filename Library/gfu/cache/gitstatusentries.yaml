@@ -13,12 +13,138 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-10-18T22:29:15.304+02:00
-  initializedAtString: 2021-10-18T22:28:37.673+02:00
+  lastUpdatedAtString: 2021-10-19T18:30:41.351+02:00
+  initializedAtString: 2021-10-19T18:21:16.763+02:00
   entries:
+  - path: .vs\VRstudentHub\v15\Server\sqlite3\db.lock
+    fullPath: E:\Games\mio\VRstudentHub\.vs\VRstudentHub\v15\Server\sqlite3\db.lock
+    projectPath: .vs\VRstudentHub\v15\Server\sqlite3\db.lock
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: .vs\VRstudentHub\v15\Server\sqlite3\storage.ide
+    fullPath: E:\Games\mio\VRstudentHub\.vs\VRstudentHub\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\VRstudentHub\v15\Server\sqlite3\storage.ide
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: .vs\VRstudentHub\v15\Server\sqlite3\storage.ide-shm
+    fullPath: E:\Games\mio\VRstudentHub\.vs\VRstudentHub\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\VRstudentHub\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: .vs\VRstudentHub\v15\Server\sqlite3\storage.ide-wal
+    fullPath: E:\Games\mio\VRstudentHub\.vs\VRstudentHub\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\VRstudentHub\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assembly-CSharp.csproj
+    fullPath: E:\Games\mio\VRstudentHub\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assembly-CSharp-Editor.csproj
+    fullPath: E:\Games\mio\VRstudentHub\Assembly-CSharp-Editor.csproj
+    projectPath: Assembly-CSharp-Editor.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: E:\Games\mio\VRstudentHub\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\BioScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\BioScene.unity
+    projectPath: Assets\Scenes\BioScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\BioScene.unity.meta
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\BioScene.unity.meta
+    projectPath: Assets\Scenes\BioScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\FisiScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\FisiScene.unity
+    projectPath: Assets\Scenes\FisiScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\FisiScene.unity.meta
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\FisiScene.unity.meta
+    projectPath: Assets\Scenes\FisiScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\GeogScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\GeogScene.unity
+    projectPath: Assets\Scenes\GeogScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\GeogScene.unity.meta
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\GeogScene.unity.meta
+    projectPath: Assets\Scenes\GeogScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\GeolScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\GeolScene.unity
+    projectPath: Assets\Scenes\GeolScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\GeolScene.unity.meta
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\GeolScene.unity.meta
+    projectPath: Assets\Scenes\GeolScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\HisScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\HisScene.unity
+    projectPath: Assets\Scenes\HisScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\HisScene.unity.meta
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\HisScene.unity.meta
+    projectPath: Assets\Scenes\HisScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\HubScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\HubScene.unity
+    projectPath: Assets\Scenes\HubScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\QuimScene.unity
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\QuimScene.unity
+    projectPath: Assets\Scenes\QuimScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\QuimScene.unity.meta
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\QuimScene.unity.meta
+    projectPath: Assets\Scenes\QuimScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Assets\Scenes\StartScene.unity
     fullPath: E:\Games\mio\VRstudentHub\Assets\Scenes\StartScene.unity
     projectPath: Assets\Scenes\StartScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\Seleccionable.cs
+    fullPath: E:\Games\mio\VRstudentHub\Assets\Scripts\Seleccionable.cs
+    projectPath: Assets\Scripts\Seleccionable.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -28,24 +154,36 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\Artifacts\28\284adde60d05d8a7c9ba085f3f113fb8
-    fullPath: E:\Games\mio\VRstudentHub\Library\Artifacts\28\284adde60d05d8a7c9ba085f3f113fb8
-    projectPath: Library\Artifacts\28\284adde60d05d8a7c9ba085f3f113fb8
+  - path: Library\Artifacts\7f\7f956ea4c2a5495914d640b81763c1b2
+    fullPath: E:\Games\mio\VRstudentHub\Library\Artifacts\7f\7f956ea4c2a5495914d640b81763c1b2
+    projectPath: Library\Artifacts\7f\7f956ea4c2a5495914d640b81763c1b2
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\Artifacts\ff\ff6a504bce768bb8da4b84d93971c182
-    fullPath: E:\Games\mio\VRstudentHub\Library\Artifacts\ff\ff6a504bce768bb8da4b84d93971c182
-    projectPath: Library\Artifacts\ff\ff6a504bce768bb8da4b84d93971c182
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\80\80fb2cd830f764268c95a278d4416669
+    fullPath: E:\Games\mio\VRstudentHub\Library\Artifacts\80\80fb2cd830f764268c95a278d4416669
+    projectPath: Library\Artifacts\80\80fb2cd830f764268c95a278d4416669
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\EditorInstance.json
     fullPath: E:\Games\mio\VRstudentHub\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: E:\Games\mio\VRstudentHub\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\gitlog.yaml
+    fullPath: E:\Games\mio\VRstudentHub\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: E:\Games\mio\VRstudentHub\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
@@ -64,21 +202,51 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\PackageManager\ProjectCache.bin
-    fullPath: E:\Games\mio\VRstudentHub\Library\PackageManager\ProjectCache.bin
-    projectPath: Library\PackageManager\ProjectCache.bin
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\SceneVisibilityState.asset
     fullPath: E:\Games\mio\VRstudentHub\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: E:\Games\mio\VRstudentHub\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: E:\Games\mio\VRstudentHub\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: E:\Games\mio\VRstudentHub\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: E:\Games\mio\VRstudentHub\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor.pdb
+    fullPath: E:\Games\mio\VRstudentHub\Library\ScriptAssemblies\Assembly-CSharp-Editor.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ShaderCache\EditorEncounteredVariants
+    fullPath: E:\Games\mio\VRstudentHub\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: E:\Games\mio\VRstudentHub\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: E:\Games\mio\VRstudentHub\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -94,6 +262,48 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+    fullPath: E:\Games\mio\VRstudentHub\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+    projectPath: Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: E:\Games\mio\VRstudentHub\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: E:\Games\mio\VRstudentHub\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: E:\Games\mio\VRstudentHub\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: E:\Games\mio\VRstudentHub\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: E:\Games\mio\VRstudentHub\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: E:\Games\mio\VRstudentHub\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Temp\__Backupscenes\0.backup
     fullPath: E:\Games\mio\VRstudentHub\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
@@ -103,6 +313,36 @@ MonoBehaviour:
   - path: Temp\UnityLockfile
     fullPath: E:\Games\mio\VRstudentHub\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-06a5532d05e90e9428246589cfabcf57
+    fullPath: E:\Games\mio\VRstudentHub\Temp\UnityTempFile-06a5532d05e90e9428246589cfabcf57
+    projectPath: Temp\UnityTempFile-06a5532d05e90e9428246589cfabcf57
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-21e03fb786395874cbfdcbd639698c18
+    fullPath: E:\Games\mio\VRstudentHub\Temp\UnityTempFile-21e03fb786395874cbfdcbd639698c18
+    projectPath: Temp\UnityTempFile-21e03fb786395874cbfdcbd639698c18
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-69a84a1ed0f0ae34fb281d52a54ee0d7
+    fullPath: E:\Games\mio\VRstudentHub\Temp\UnityTempFile-69a84a1ed0f0ae34fb281d52a54ee0d7
+    projectPath: Temp\UnityTempFile-69a84a1ed0f0ae34fb281d52a54ee0d7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-9075d879aca1ec647b5d5dfa44f12db8
+    fullPath: E:\Games\mio\VRstudentHub\Temp\UnityTempFile-9075d879aca1ec647b5d5dfa44f12db8
+    projectPath: Temp\UnityTempFile-9075d879aca1ec647b5d5dfa44f12db8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: VRstudentHub.sln
+    fullPath: E:\Games\mio\VRstudentHub\VRstudentHub.sln
+    projectPath: VRstudentHub.sln
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
