@@ -59,6 +59,9 @@ public class Seleccionable : MonoBehaviour
             Debug.Log(next);
             SceneManager.LoadScene(next);
         }
+        if (type == 3) {
+
+        }
     }
 
 }
