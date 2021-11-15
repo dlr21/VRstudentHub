@@ -190,6 +190,18 @@ PrefabInstance:
       propertyPath: next
       value: QuimScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770682, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: m_Name
       value: Quimica
@@ -491,6 +503,18 @@ PrefabInstance:
       propertyPath: type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770682, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: m_Name
       value: Biologia
@@ -660,6 +684,18 @@ PrefabInstance:
       propertyPath: type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770682, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: m_Name
       value: Geologia
@@ -733,6 +769,18 @@ PrefabInstance:
       propertyPath: next
       value: FisiScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770682, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: m_Name
       value: Fisica
@@ -805,6 +853,18 @@ PrefabInstance:
     - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: next
       value: HisScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770682, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: m_Name
@@ -974,6 +1034,18 @@ PrefabInstance:
     - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: next
       value: GeogScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: previousForm.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770682, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: m_Name

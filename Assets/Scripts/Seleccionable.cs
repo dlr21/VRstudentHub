@@ -8,20 +8,27 @@ public class Seleccionable : MonoBehaviour
 {
 
     private bool focus;
-    private float selectTime = 3.0f;
+    private bool selected;
+
+    public float selectTime = 3.0f;
     private float time = 0f;
+
     private GameObject child;
+    public Vector3 previousForm;
+
     public int type;//1 nextScene //2 drag //3 selection //0 default
     public string next;
 
-    private void Start()
+    void Start() 
     {
         child = gameObject.transform.GetChild(0).gameObject;
     }
 
     void Update()
     {
-        if (focus)
+
+        //Control de la barra verde de seleccion
+        if (focus && !selected)
         {
             time += Time.deltaTime;
             float aux = time / selectTime;
@@ -37,31 +44,43 @@ public class Seleccionable : MonoBehaviour
         }
 
     }
-    // This event is going to be fired when we look at the sphere
+
+
     public void OnGazeEnter()
     {
         focus = true;
-        gameObject.transform.localScale = new Vector3(2.5f, 2.5f, 1f);
+        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x+0.5f, gameObject.transform.localScale.y + 0.5f, 1f);
         Debug.Log("Gaze entered");
     }
+    
 
-    // This event is going to be fired when we stop looking at the sphere
     public void OnGazeLeave()
     {
         focus = false;
         time = 0;
-        gameObject.transform.localScale = new Vector3(2f, 2f, 1f);
+        gameObject.transform.localScale = previousForm;
         Debug.Log("Gaze left");
     }
 
     public void Select() {
+
         if (type == 1) {
-            Debug.Log(next);
+            Debug.Log("Select 1 " + next);
             SceneManager.LoadScene(next);
         }
-        if (type == 3) {
 
+        if (type == 3) {
+            Debug.Log("Select 3");
+            ChangeSelect(true); 
+            previousForm = gameObject.transform.localScale;
         }
+
     }
 
+    private void ChangeSelect(bool s)
+    {
+        selected = s;
+    }
+
+    public bool getSelected() { return selected; }
 }
