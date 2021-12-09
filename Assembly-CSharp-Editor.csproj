@@ -65,6 +65,14 @@
     <Compile Include="Assets\GoogleVR\Demos\Editor\PermissionsDemoBuildProcessor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\EventSystem\GvrPointerScrollInputEditor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\Controller\GvrLaserPointerEditor.cs" />
+    <Compile Include="Assets\FiloCables\Editor\DraggableIcon.cs" />
+    <Compile Include="Assets\FiloCables\Editor\CableShapeEditor.cs" />
+    <Compile Include="Assets\FiloCables\Editor\ConvexHull2DEditor.cs" />
+    <Compile Include="Assets\FiloCables\Editor\CableDiscEditor.cs" />
+    <Compile Include="Assets\FiloCables\Editor\CableLinkDrawer.cs" />
+    <Compile Include="Assets\FiloCables\Editor\CableEditor.cs" />
+    <Compile Include="Assets\FiloCables\Editor\CablePointEditor.cs" />
+    <Compile Include="Assets\FiloCables\Editor\CableSectionEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

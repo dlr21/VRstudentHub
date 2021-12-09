@@ -184,7 +184,23 @@
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerVisualMulti.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\AndroidNativeKeyboardProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\EmulatorKeyboardProvider.cs" />
-    <Compile Include="Assets\Scripts\ResistenciaTotal.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\RuntimeCableGenerator.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CableShape.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CablePoint.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CableDisc.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\ConvexHull2D.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CableBody.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\PlatformController.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Utils.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\TensionProbe.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\SpoolController.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableSolver.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableSection.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Cable.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableJoint.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableRenderer.cs" />
+    <Compile Include="Assets\Scripts\FisicaManager.cs" />
+    <Compile Include="Assets\Scripts\InfoSearch.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
@@ -208,6 +224,7 @@
      <None Include="Assets\GoogleVR\Plugins\Google.ProtocolBuffers.dll" />
      <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
      <None Include="Assets\GoogleVR\Plugins\x86\instant_preview_shared.dll" />
+     <None Include="Assets\FiloCables\CHANGELOG.txt" />
      <None Include="Assets\GoogleVR\Plugins\x86\zlib.dll" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Plugins\x86_64\libeay32.dll" />
