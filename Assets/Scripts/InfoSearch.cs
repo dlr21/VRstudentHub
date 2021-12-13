@@ -11,21 +11,21 @@ public class InfoSearch : MonoBehaviour
 
     void Start()
     {
-        child = gameObject.transform.GetChild(0).gameObject;
+        child = gameObject.transform.GetChild(transform.childCount - 1).gameObject;
     }
 
     void Update()
     {
 
         //Control de la barra verde de seleccion
-      /*  if (focus)
+        if (focus)
         {
             child.transform.localScale = new Vector3(2, 0.2f, 1f);
         }
         else
         {
             child.transform.localScale = new Vector3(0f, 0.2f, 1f);
-        }*/
+        }
 
     }
 

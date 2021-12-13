@@ -512,7 +512,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mira la esfera unos segundos para continuar
+  m_Text: Mira el cuadrado unos segundos para continuar
 --- !u!222 &945096613
 CanvasRenderer:
   m_ObjectHideFlags: 0

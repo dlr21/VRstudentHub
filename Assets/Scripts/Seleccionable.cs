@@ -72,12 +72,11 @@ public class Seleccionable : MonoBehaviour
         if (type == 3) {
             Debug.Log("Select 3");
             ChangeSelect(true); 
-            previousForm = gameObject.transform.localScale;
         }
 
     }
 
-    private void ChangeSelect(bool s)
+    public void ChangeSelect(bool s)
     {
         selected = s;
     }
