@@ -16,7 +16,7 @@ public class Seleccionable : MonoBehaviour
     private GameObject child;
     public Vector3 previousForm;
 
-    public int type;//1 nextScene //2 drag //3 selection //0 default
+    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente
     public string next;
 
     void Start() 
@@ -72,6 +72,12 @@ public class Seleccionable : MonoBehaviour
         if (type == 3) {
             Debug.Log("Select 3");
             ChangeSelect(true); 
+        }
+
+        if (type == 4)
+        {
+            Debug.Log("Select 4");
+            GameObject.Find("Cube").GetComponent<HistoriaManager>().resolver(int.Parse(next));
         }
 
     }

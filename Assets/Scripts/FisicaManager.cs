@@ -17,7 +17,10 @@ public class FisicaManager : MonoBehaviour
     private GameObject res;
 
 
-    private string[] preguntas ={"¿Cuál es la resistencia total del circuito?", "¿Qué intensidad recorre este circuito?", "Si pudiesemos añadir otra resistencia en serie ¿De cuánto tiene que ser esa resistencia para que la intesidad alcance 1 A?"};
+    private string[] preguntas ={"¿Cuál es la resistencia total del circuito?",
+        "¿Qué intensidad recorre este circuito?",
+        "Si pudiesemos añadir otra resistencia en serie ¿De cuánto tiene que ser esa resistencia para que la intesidad alcance 1 A?" };
+
     private string[] respuestasL = { "5", "2", "10" };
     private string[] respuestasR = { "6", "5", "5" };
     private int[] correcta = { 5, 2, 5 };
