@@ -50,7 +50,6 @@ public class Seleccionable : MonoBehaviour
     {
         focus = true;
         gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x+0.5f, gameObject.transform.localScale.y + 0.5f, 1f);
-        Debug.Log("Gaze entered");
     }
     
 
@@ -59,7 +58,6 @@ public class Seleccionable : MonoBehaviour
         focus = false;
         time = 0;
         gameObject.transform.localScale = previousForm;
-        Debug.Log("Gaze left");
     }
 
     public void Select() {
