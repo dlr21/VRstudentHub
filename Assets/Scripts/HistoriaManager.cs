@@ -42,7 +42,7 @@ public class HistoriaManager : MonoBehaviour
     }
 
 
-    public void resolver(int i)
+    public bool resolver(int i)
     {
         if (i == correcta[npregunta])
         {
@@ -54,11 +54,15 @@ public class HistoriaManager : MonoBehaviour
             if (resueltos == totalCorrectas[npregunta]) {
                 SiguientePregunta();
             }
-        }
-        else
+            return true;
+        } else if (i==0) {
+            Debug.Log("YA ELEGIDA");//INSERTAR SONIDO ACIERTO
+            return false;
+        } else
         {
             res.GetComponent<Text>().text = "ERROR";
             Debug.Log("FALSO");//INSERTAR SONIDO FALLO
+            return false;
         }
 
     }

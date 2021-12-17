@@ -75,7 +75,10 @@ public class Seleccionable : MonoBehaviour
         if (type == 4)
         {
             Debug.Log("Select 4");
-            GameObject.Find("Cube").GetComponent<HistoriaManager>().resolver(int.Parse(next));
+            if (GameObject.Find("Cube").GetComponent<HistoriaManager>().resolver(int.Parse(next))) {
+                type = 0;
+            }
+
         }
 
     }
