@@ -28,7 +28,7 @@ public class Seleccionable : MonoBehaviour
     {
 
         //Control de la barra verde de seleccion
-        if (focus && !selected)
+        if (focus && !selected && child!=null)
         {
             time += Time.deltaTime;
             float aux = time / selectTime;
@@ -65,6 +65,12 @@ public class Seleccionable : MonoBehaviour
         if (type == 1) {
             Debug.Log("Select 1 " + next);
             SceneManager.LoadScene(next);
+        }
+
+        if (type == 2)
+        {
+            Debug.Log("Select 2 " + next);
+            ChangeSelect(true);
         }
 
         if (type == 3) {
