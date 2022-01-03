@@ -5,6 +5,8 @@ using UnityEngine;
 public class RotacionCabeza : MonoBehaviour
 {
     // Start is called before the first frame update
+
+
     void Start()
     {
         Input.gyro.enabled = true;
@@ -13,6 +15,9 @@ public class RotacionCabeza : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         //Obtiene datos del giroscopio
         Quaternion att = Input.gyro.attitude;
         //Reoriente los datos del giroscoopio para la pantalla

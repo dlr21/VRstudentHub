@@ -1166,6 +1166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: posMadrid
       objectReference: {fileID: 0}
+    - target: {fileID: 8856961488855773483, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
 --- !u!1 &910203886

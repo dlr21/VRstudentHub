@@ -14,9 +14,11 @@ public class Seleccionable : MonoBehaviour
     private float time = 0f;
 
     private GameObject child;
+
     public Vector3 previousForm;
 
     public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente
+
     public string next;
 
     void Start() 
@@ -27,7 +29,7 @@ public class Seleccionable : MonoBehaviour
     void Update()
     {
 
-        //Control de la barra verde de seleccion
+            //Control de la barra verde de seleccion
         if (focus && !selected && child!=null)
         {
             time += Time.deltaTime;
@@ -40,7 +42,8 @@ public class Seleccionable : MonoBehaviour
                 Select();
             }
         }else {
-            child.transform.localScale = new Vector3(0f, 0.2f, 1f);
+            if(child!=null)
+                child.transform.localScale = new Vector3(0f, 0.2f, 1f);
         }
 
     }
@@ -64,6 +67,7 @@ public class Seleccionable : MonoBehaviour
 
         if (type == 1) {
             Debug.Log("Select 1 " + next);
+
             SceneManager.LoadScene(next);
         }
 
@@ -95,4 +99,6 @@ public class Seleccionable : MonoBehaviour
     }
 
     public bool getSelected() { return selected; }
+
+    
 }

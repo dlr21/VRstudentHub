@@ -32,6 +32,8 @@ public class HistoriaManager : MonoBehaviour
         res = GameObject.Find("Respuesta");
         cuantos= GameObject.Find("Cuantos");
         pregunta = GameObject.Find("Pregunta");
+        
+        
     }
 
     private void Start()

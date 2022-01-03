@@ -38,6 +38,9 @@ public class FisicaManager : MonoBehaviour
         leftText= GameObject.Find("Opcion1Text");
         rightText = GameObject.Find("Opcion2Text");
 
+
+            
+
     }
 
     private void Start()
