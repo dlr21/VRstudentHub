@@ -8,18 +8,18 @@ public class GeografiaManager : MonoBehaviour
     GameObject _madrid;
     GameObject _posMadrid;
 
-    GameObject[] _comunidad= new GameObject[20];
-    GameObject[] _posComunidad= new GameObject[20];
+    GameObject[] _comunidad= new GameObject[19];
+    GameObject[] _posComunidad= new GameObject[19];
 
-    private string [] _lugares= {"Madrid", "Barcelona", "Valencia","Sevilla",
-        "Zaragoza","Malaga","Oviedo","Palma de Mallorca","Tenerife","Las Palmas",
-        "Santander","Toledo","Valladolid","Ceuta","Merida","Santiago de Compostela",
-        "Logroño","Melilla","Murcia", "Pamplona"};
+    private string [] _lugares= {"Madrid", "Catalunya", "cValenciana","Andalucia",
+        "Aragon","Asturias","Islas Baleares","Islas Canarias",
+        "Cantabria","cLaMancha","cYleon","Ceuta","Extremadura","Galicia",
+        "LaRioja","Melilla","Murcia", "Navarra","PaisVasco"};
 
-    private string[] _posiciones ={"posMadrid", "posBarcelona", "posValencia","posSevilla",
-        "posZaragoza","posMalaga","posOviedo","posPalma de Mallorca","posTenerife","posLas Palmas",
-        "posSantander","posToledo","posValladolid","posCeuta","posMerida","posSantiago de Compostela",
-        "posLogroño","posMelilla","posMurcia", "posPamplona"};
+    private string[] _posiciones ={"posMadrid", "posCatalunya", "poscValenciana","posAndalucia",
+        "posAragon","posAsturias","posBaleares","posCanarias",
+        "posCantabria","poscLaMancha","poscYleon","posCeuta","posExtremadura","posGalicia",
+        "posLaRioja","posMelilla","posMurcia", "posNavarra","posPaisVasco"};
 
     Vector3 posAux=new Vector3(0,-1.2f,0);
     Vector3 sizeAux = new Vector3(0.5f, 0.25f, 0.5f);
@@ -55,23 +55,23 @@ public class GeografiaManager : MonoBehaviour
         for (int i = 0; i < _lugares.Length; i++) {
 
             GameObject a = GameObject.Find(_lugares[i]);
-            if (a == null) break;
-
-            if (a.GetComponent<Seleccionable>().getSelected() )
-            {
-                a.transform.position = sumaAux();
-                for (int j = 0; j < _posiciones.Length; j++)
+            if (a != null) {
+                if (a.GetComponent<Seleccionable>().getSelected() )
                 {
-                    
-                    GameObject b = GameObject.Find(_posiciones[j]);
-                    if (b == null) break;
-
-                    if (b.GetComponent<Seleccionable>().getSelected() )
+                    a.transform.position = sumaAux();
+                    for (int j = 0; j < _posiciones.Length; j++)
                     {
+                    
+                        GameObject b = GameObject.Find(_posiciones[j]);
+                        if (b == null) break;
 
-                        Debug.Log("SEgundo seleccionado");
-                        intercambio(a, b);
+                        if (b.GetComponent<Seleccionable>().getSelected() )
+                        {
 
+                            Debug.Log("SEgundo seleccionado");
+                            intercambio(a, b);
+
+                        }
                     }
                 }
             }
@@ -98,9 +98,7 @@ public class GeografiaManager : MonoBehaviour
             a.GetComponent<Seleccionable>().type = 0;
             a.GetComponent<Seleccionable>().ChangeSelect(false);
             Destroy(a.transform.GetChild(0).gameObject);
-            b.GetComponent<Seleccionable>().type = 0;
-            b.GetComponent<Seleccionable>().ChangeSelect(false);
-            Destroy(b.transform.GetChild(0).gameObject);
+            Destroy(b);
         }
         else {
             Debug.Log("FALSO");//INSERTAR SONIDO FALLO
