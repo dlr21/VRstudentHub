@@ -5,23 +5,22 @@ using UnityEngine;
 public class GeografiaManager : MonoBehaviour
 {
 
-    GameObject _madrid;
-    GameObject _posMadrid;
+
 
     GameObject[] _comunidad= new GameObject[19];
     GameObject[] _posComunidad= new GameObject[19];
 
     private string [] _lugares= {"Madrid", "Catalunya", "cValenciana","Andalucia",
-        "Aragon","Asturias","Islas Baleares","Islas Canarias",
+        "Aragon","Asturias","IslasBaleares","IslasCanarias",
         "Cantabria","cLaMancha","cYleon","Ceuta","Extremadura","Galicia",
         "LaRioja","Melilla","Murcia", "Navarra","PaisVasco"};
 
     private string[] _posiciones ={"posMadrid", "posCatalunya", "poscValenciana","posAndalucia",
-        "posAragon","posAsturias","posBaleares","posCanarias",
+        "posAragon","posAsturias","posIslasBaleares","posIslasCanarias",
         "posCantabria","poscLaMancha","poscYleon","posCeuta","posExtremadura","posGalicia",
         "posLaRioja","posMelilla","posMurcia", "posNavarra","posPaisVasco"};
 
-    Vector3 posAux=new Vector3(0,-1.2f,0);
+    Vector3 posAux=new Vector3(0,-1.5f,0);
     Vector3 sizeAux = new Vector3(0.5f, 0.25f, 0.5f);
 
     // Start is called before the first frame update
@@ -43,8 +42,8 @@ public class GeografiaManager : MonoBehaviour
                 _posComunidad[j] = GameObject.Find(_posiciones[j]);
         }
 
-     /* _madrid = GameObject.Find("Madrid");
-       _posMadrid = GameObject.Find("posMadrid");*/
+        changePosicionSelect(false);
+
 
     }
 
@@ -63,21 +62,50 @@ public class GeografiaManager : MonoBehaviour
                     {
                     
                         GameObject b = GameObject.Find(_posiciones[j]);
-                        if (b == null) break;
-
-                        if (b.GetComponent<Seleccionable>().getSelected() )
+                        if (b != null)
                         {
 
-                            Debug.Log("SEgundo seleccionado");
-                            intercambio(a, b);
+                            if (b.GetComponent<Seleccionable>().getSelected())
+                            {
 
+                                Debug.Log("SEgundo seleccionado");
+                                intercambio(a, b);
+
+
+                            }
                         }
                     }
                 }
             }
         }
+        changePosicionSelect(false);
     }
 
+    public void changePosicionSelect(bool a) {
+        for (int j = 0; j < _posiciones.Length; j++)
+        {
+            GameObject b = GameObject.Find(_posiciones[j]);
+            if (b != null) {
+                b.GetComponent<Seleccionable>().ChangeSelect(a);
+            }
+            
+        }
+    }
+
+    public void changeNombreSelect(bool a)
+    {
+        for (int j = 0; j < _lugares.Length; j++)
+        {
+            GameObject b = GameObject.Find(_lugares[j]);
+            if (b != null)
+            {
+                if (b.GetComponent<Seleccionable>().getSelected() == true) {
+                    b.transform.position = b.GetComponent<Seleccionable>().startPosition;
+                }
+                b.GetComponent<Seleccionable>().ChangeSelect(a);
+            }
+        }
+    }
 
     public Vector3 sumaAux() {
 
@@ -98,7 +126,6 @@ public class GeografiaManager : MonoBehaviour
             a.GetComponent<Seleccionable>().type = 0;
             a.GetComponent<Seleccionable>().ChangeSelect(false);
             Destroy(a.transform.GetChild(0).gameObject);
-            Destroy(b);
         }
         else {
             Debug.Log("FALSO");//INSERTAR SONIDO FALLO

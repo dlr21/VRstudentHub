@@ -15,6 +15,7 @@ public class Seleccionable : MonoBehaviour
 
     private GameObject child;
 
+    public Vector3 startPosition;
     public Vector3 previousForm;
 
     public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente
@@ -24,6 +25,8 @@ public class Seleccionable : MonoBehaviour
     void Start() 
     {
         child = gameObject.transform.GetChild(0).gameObject;
+        startPosition = gameObject.transform.position;
+        previousForm = gameObject.transform.localScale;
     }
 
     void Update()
@@ -89,6 +92,10 @@ public class Seleccionable : MonoBehaviour
                 type = 0;
             }
 
+        }
+        //desseleccionar en geografia
+        if (type == 5) {
+            GameObject.Find("Cube").GetComponent<GeografiaManager>().changeNombreSelect(false);
         }
 
     }
