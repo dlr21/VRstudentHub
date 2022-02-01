@@ -1,14 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GeografiaManager : MonoBehaviour
 {
 
-
+    private GameObject pregunta;
+    private GameObject cuantos;
+    private GameObject res;
 
     GameObject[] _comunidad= new GameObject[19];
     GameObject[] _posComunidad= new GameObject[19];
+
+    private int correctos = 0;
+    private int acolocar = 17; //19 con ceuta y melilla a hacer 
 
     private string [] _lugares= {"Madrid", "Catalunya", "cValenciana","Andalucia",
         "Aragon","Asturias","IslasBaleares","IslasCanarias",
@@ -25,13 +31,21 @@ public class GeografiaManager : MonoBehaviour
 
     // Start is called before the first frame update
 
+    private void Awake()
+    {
+        res = GameObject.Find("Respuesta");
+        cuantos = GameObject.Find("Cuantos");
+        pregunta = GameObject.Find("Pregunta");
 
+
+    }
 
     void Start()
     {
-        
 
-         for (int i = 0; i < _lugares.Length; i++) {
+        cuantos.GetComponent<Text>().text = correctos + "/" + acolocar;
+
+        for (int i = 0; i < _lugares.Length; i++) {
              if(GameObject.Find(_lugares[i]) != null)
                  _comunidad[i] = GameObject.Find(_lugares[i]);
          }
@@ -50,6 +64,8 @@ public class GeografiaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        comprobarCorrectos();
 
         for (int i = 0; i < _lugares.Length; i++) {
 
@@ -79,6 +95,15 @@ public class GeografiaManager : MonoBehaviour
             }
         }
         changePosicionSelect(false);
+    }
+
+    public void comprobarCorrectos() {
+        if (correctos == acolocar)
+        {
+            //sonido bien y cambiar texto
+            res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
+
+        }
     }
 
     public void changePosicionSelect(bool a) {
@@ -116,19 +141,41 @@ public class GeografiaManager : MonoBehaviour
 
     }
 
+    public void intercambioCorrecto() {
+        correctos++;
+        cuantos.GetComponent<Text>().text = correctos + "/" + acolocar;
+        res.GetComponent<Text>().text = "Posición correcta";
+    }
+
     //provisional
     public void intercambio(GameObject a, GameObject b) {
         Debug.Log(a.name +" "+ b.name);
         if ("pos" + a.name == b.name)
         {
-            a.transform.position = b.transform.position;
-            a.transform.position += new Vector3(0, 0, -0.2f);
+            if (a.name == "IslasCanarias")
+            {
+                a.transform.localPosition = new Vector3(-0.5f, -2.7f, -0.7f);
+            }
+            else if(a.name == "IslasBaleares")
+            {
+                a.transform.position = new Vector3(8.5f, -1.5f, -0.7f);
+            }
+            else
+            {
+                a.transform.position = new Vector3(b.transform.position.x, b.transform.position.y, 14);
+            }
+            
             a.GetComponent<Seleccionable>().type = 0;
             a.GetComponent<Seleccionable>().ChangeSelect(false);
             Destroy(a.transform.GetChild(0).gameObject);
+            Destroy(b.transform.GetChild(0).gameObject);
+            intercambioCorrecto();
+           
         }
         else {
             Debug.Log("FALSO");//INSERTAR SONIDO FALLO
+            res.GetComponent<Text>().text = "Posición incorrecta";
+
         }
 
     }
