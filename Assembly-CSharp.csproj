@@ -119,6 +119,7 @@
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Utils.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
+    <Compile Include="Assets\Scripts\GeografiaManager.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrExecuteEventsExtension.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\FloatEvent.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\DummyHeadsetProvider.cs" />
@@ -202,7 +203,7 @@
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerVisualMulti.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\AndroidNativeKeyboardProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\EmulatorKeyboardProvider.cs" />
-    <Compile Include="Assets\Scripts\GeografiaManager.cs" />
+    <Compile Include="Assets\Scripts\BiologiaManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

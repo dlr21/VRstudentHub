@@ -36,8 +36,7 @@ public class GeografiaManager : MonoBehaviour
         res = GameObject.Find("Respuesta");
         cuantos = GameObject.Find("Cuantos");
         pregunta = GameObject.Find("Pregunta");
-
-
+        
     }
 
     void Start()
@@ -94,12 +93,15 @@ public class GeografiaManager : MonoBehaviour
                 }
             }
         }
+        Debug.Log(correctos);
         changePosicionSelect(false);
     }
 
     public void comprobarCorrectos() {
+
         if (correctos == acolocar)
         {
+            Debug.Log("FIN ");//INSERTAR SONIDO FINAL
             //sonido bien y cambiar texto
             res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
 
@@ -142,7 +144,9 @@ public class GeografiaManager : MonoBehaviour
     }
 
     public void intercambioCorrecto() {
+ 
         correctos++;
+        Debug.Log("Correcto " + correctos);//INSERTAR SONIDO FALLO
         cuantos.GetComponent<Text>().text = correctos + "/" + acolocar;
         res.GetComponent<Text>().text = "Posición correcta";
     }
@@ -169,8 +173,10 @@ public class GeografiaManager : MonoBehaviour
             a.GetComponent<Seleccionable>().ChangeSelect(false);
             Destroy(a.transform.GetChild(0).gameObject);
             Destroy(b.transform.GetChild(0).gameObject);
+            Debug.Log("Antes intercambio");
             intercambioCorrecto();
-           
+            Debug.Log("Tras intercambio");
+
         }
         else {
             Debug.Log("FALSO");//INSERTAR SONIDO FALLO
