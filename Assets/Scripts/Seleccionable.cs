@@ -55,7 +55,7 @@ public class Seleccionable : MonoBehaviour
     public void OnGazeEnter()
     {
         focus = true;
-        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x+0.5f, gameObject.transform.localScale.y + 0.5f, gameObject.transform.localScale.z);
+        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x+0.5f, gameObject.transform.localScale.y + 0.5f, gameObject.transform.localScale.z+ 0.5f);
     }
     
 
