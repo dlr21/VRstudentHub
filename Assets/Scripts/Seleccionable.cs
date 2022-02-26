@@ -18,7 +18,7 @@ public class Seleccionable : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 previousForm;
 
-    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente
+    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino
 
     public string next;
 
@@ -68,34 +68,38 @@ public class Seleccionable : MonoBehaviour
 
     public void Select() {
 
-        if (type == 1) {
+        if (type == 1)
+        {
             Debug.Log("Select 1 " + next);
 
             SceneManager.LoadScene(next);
         }
-
-        if (type == 2)
+        else if (type == 2)
         {
             Debug.Log("Select 2 " + next);
             ChangeSelect(true);
         }
-
-        if (type == 3) {
+        else if (type == 3)
+        {
             Debug.Log("Select 3");
-            ChangeSelect(true); 
+            ChangeSelect(true);
         }
-
-        if (type == 4)
+        else if (type == 4)
         {
             Debug.Log("Select 4");
-            if (GameObject.Find("Cube").GetComponent<HistoriaManager>().resolver(int.Parse(next))) {
+            if (GameObject.Find("Cube").GetComponent<HistoriaManager>().resolver(int.Parse(next)))
+            {
                 type = 0;
             }
 
         }
-        //desseleccionar en geografia
-        if (type == 5) {
+        else if (type == 5)
+        {
             GameObject.Find("Cube").GetComponent<GeografiaManager>().changeNombreSelect(false);
+        }
+        else if (type == 6) {
+            Debug.Log("Select 6");
+            GameObject.Find("Cube").GetComponent<BiologiaManager>().cambiarReino(next);
         }
 
     }

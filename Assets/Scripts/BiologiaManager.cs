@@ -18,7 +18,6 @@ public class BiologiaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(activado);
         if (cambio)
         {
             if (activado == "Animal")

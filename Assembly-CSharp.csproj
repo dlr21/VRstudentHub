@@ -67,6 +67,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EditorControllerProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\EventSystem\GvrBasePointer.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Scripts\BiologiaManager.cs" />
     <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
     <Compile Include="Assets\FiloCables\SampleScenes\Scripts\RuntimeCableGenerator.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\GvrCardboardHelpers.cs" />
@@ -203,7 +204,7 @@
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerVisualMulti.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\AndroidNativeKeyboardProvider.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\EmulatorKeyboardProvider.cs" />
-    <Compile Include="Assets\Scripts\BiologiaManager.cs" />
+    <Compile Include="Assets\Scripts\BioCuadro.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
