@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HisScene.unity
     guid: 186c7fb7252a33549b6ff3648fed9380
   - enabled: 1
-    path: Assets/Scenes/QuimScene.unity
+    path: Assets/Scenes/EnglScene.unity
     guid: 6d18e481d6efcc942bef86a2e1acf50c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 148da549df59eeb44b0dc5d20e75b6df, type: 2}

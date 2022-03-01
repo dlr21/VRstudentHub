@@ -123,7 +123,7 @@ public class FisicaManager : MonoBehaviour
         }
         else
         {
-            res.GetComponent<Text>().text = "FIN";
+            res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
             Debug.Log("no mas preguntas");
         }
 

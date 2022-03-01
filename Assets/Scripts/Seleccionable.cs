@@ -18,7 +18,7 @@ public class Seleccionable : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 previousForm;
 
-    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino
+    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino//7 cuadro
 
     public string next;
 
@@ -100,6 +100,9 @@ public class Seleccionable : MonoBehaviour
         else if (type == 6) {
             Debug.Log("Select 6");
             GameObject.Find("Cube").GetComponent<BiologiaManager>().cambiarReino(next);
+        } else if (type == 7) {
+            Debug.Log("Select 7");
+            gameObject.GetComponent<BioCuadro>().reinoCorrecto(GameObject.Find("Cube").GetComponent<BiologiaManager>().activado);
         }
 
     }
