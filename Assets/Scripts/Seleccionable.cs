@@ -18,7 +18,7 @@ public class Seleccionable : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 previousForm;
 
-    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino//7 cuadro
+    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino//7 cuadro//8 audio ingles//
 
     public string next;
 
@@ -74,14 +74,9 @@ public class Seleccionable : MonoBehaviour
 
             SceneManager.LoadScene(next);
         }
-        else if (type == 2)
+        else if (type == 2 || type == 3 )
         {
-            Debug.Log("Select 2 " + next);
-            ChangeSelect(true);
-        }
-        else if (type == 3)
-        {
-            Debug.Log("Select 3");
+            Debug.Log("Select 2 ");
             ChangeSelect(true);
         }
         else if (type == 4)
@@ -91,7 +86,6 @@ public class Seleccionable : MonoBehaviour
             {
                 type = 0;
             }
-
         }
         else if (type == 5)
         {
@@ -103,6 +97,14 @@ public class Seleccionable : MonoBehaviour
         } else if (type == 7) {
             Debug.Log("Select 7");
             gameObject.GetComponent<BioCuadro>().reinoCorrecto(GameObject.Find("Cube").GetComponent<BiologiaManager>().activado);
+        }else if (type == 8)
+        {
+            Debug.Log("Select 8");
+            gameObject.GetComponent<EnglishManager>().audioPregunta();
+        }else if (type == 9)
+        {
+            Debug.Log("Select 9");
+            gameObject.GetComponent<EnglishManager>().comprobarCorrecta(int.Parse(next));
         }
 
     }
