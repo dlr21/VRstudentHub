@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: next
-      value: QuimScene
+      value: EnglScene
       objectReference: {fileID: 0}
     - target: {fileID: 8856961488013770681, guid: de6ec1436f59f044ab767af0421bf4f5, type: 3}
       propertyPath: previousForm.x

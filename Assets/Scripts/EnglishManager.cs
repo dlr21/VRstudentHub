@@ -32,9 +32,10 @@ public class EnglishManager : MonoBehaviour
         "Teachers complain about the quality of the food."
     };
 
-    private int[] correcta = { 1, 2, 3, 4, 5};
+    private int[] correcta = { 2, 2, 2, 3, 1};
 
     private GameObject pregunta;
+    private GameObject respuesta;
     private GameObject opcionA;
     private GameObject opcionB;
     private GameObject opcionC;
@@ -49,6 +50,7 @@ public class EnglishManager : MonoBehaviour
         opcionC = GameObject.Find("Opcion3");
 
         pregunta = GameObject.Find("Pregunta");
+        respuesta = GameObject.Find("Respuesta");
 
     }
 
@@ -61,12 +63,15 @@ public class EnglishManager : MonoBehaviour
         opcionA.GetComponent<TMPro.TextMeshPro>().text = respuestas1[npregunta];
         opcionB.GetComponent<TMPro.TextMeshPro>().text = respuestas2[npregunta];
         opcionC.GetComponent<TMPro.TextMeshPro>().text = respuestas3[npregunta];
+
+        respuesta.GetComponent<Text>().text = "Elige la respuesta correcta.";
     }
 
     // Update is called once per frame
     void Update()
     {
     }
+
     //prueba de que funciona
     private void netPregunta() {
         if (Input.GetKeyDown(KeyCode.Space)) {
@@ -77,6 +82,7 @@ public class EnglishManager : MonoBehaviour
     }
 
     public void comprobarCorrecta(int a) {
+        GameObject.Find("Cube").GetComponent<AudioEngl>().music.Stop();
         if (correcta[npregunta] == a)
         {
             preguntaCorrecta();
@@ -91,41 +97,32 @@ public class EnglishManager : MonoBehaviour
         opcionA.GetComponent<Seleccionable>().type = 0;
         opcionB.GetComponent<Seleccionable>().type = 0;
         opcionC.GetComponent<Seleccionable>().type = 0;
+
+        respuesta.GetComponent<Text>().text = "Error";
     }
 
     private void preguntaCorrecta()
     {
         npregunta++;
-        pregunta.GetComponent<Text>().text = preguntas[npregunta];
+        if (npregunta < correcta.Length) { 
+            pregunta.GetComponent<Text>().text = preguntas[npregunta];
 
-        opcionA.GetComponent<TMPro.TextMeshPro>().text = respuestas1[npregunta];
-        opcionB.GetComponent<TMPro.TextMeshPro>().text = respuestas2[npregunta];
-        opcionC.GetComponent<TMPro.TextMeshPro>().text = respuestas3[npregunta];
+            opcionA.GetComponent<TMPro.TextMeshPro>().text = respuestas1[npregunta];
+            opcionB.GetComponent<TMPro.TextMeshPro>().text = respuestas2[npregunta];
+            opcionC.GetComponent<TMPro.TextMeshPro>().text = respuestas3[npregunta];
+
+            respuesta.GetComponent<Text>().text = "Question "+(npregunta+1);
+        }
     }
 
     public void audioPregunta()
     {
-        if (npregunta == 1)
+        if (npregunta > correcta.Length)
         {
-            Debug.Log("Audio" + npregunta);
-        }
-        else if (npregunta == 2)
-        {
-            Debug.Log("Audio" + npregunta);
-        }
-        else if (npregunta == 3)
-        {
-            Debug.Log("Audio" + npregunta);
-        }
-        else if (npregunta == 4)
-        {
-            Debug.Log("Audio" + npregunta);
-        }
-        else if (npregunta == 5)
-        {
-            Debug.Log("Audio" + npregunta);
-        }else if (npregunta > correcta.Length) {
             Debug.Log("No mas preguntas");
+        }else {
+            Debug.Log("Audio" + npregunta);
+            GameObject.Find("Cube").GetComponent<AudioEngl>().PlayQuestion(npregunta);
         }
     }
 

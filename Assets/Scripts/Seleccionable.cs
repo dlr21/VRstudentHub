@@ -100,11 +100,11 @@ public class Seleccionable : MonoBehaviour
         }else if (type == 8)
         {
             Debug.Log("Select 8");
-            gameObject.GetComponent<EnglishManager>().audioPregunta();
+            GameObject.Find("Cube").GetComponent<EnglishManager>().audioPregunta();
         }else if (type == 9)
         {
             Debug.Log("Select 9");
-            gameObject.GetComponent<EnglishManager>().comprobarCorrecta(int.Parse(next));
+            GameObject.Find("Cube").GetComponent<EnglishManager>().comprobarCorrecta(int.Parse(next));
         }
 
     }
