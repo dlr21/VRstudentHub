@@ -20,11 +20,11 @@ public class InfoSearch : MonoBehaviour
         //Control de la barra verde de seleccion
         if (focus)
         {
-            child.transform.localScale = new Vector3(2, 0.2f, 1f);
+            child.transform.localScale = new Vector3(1f, 1f, 1f);
         }
         else
         {
-            child.transform.localScale = new Vector3(0f, 0.2f, 1f);
+            child.transform.localScale = new Vector3(0f, 0f, 1f);
         }
 
     }
@@ -32,7 +32,7 @@ public class InfoSearch : MonoBehaviour
     public void OnGazeEnter()
     {
         focus = true;
-        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x + 0.5f, gameObject.transform.localScale.y + 0.5f, gameObject.transform.localScale.z + 0.5f);
+        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x + 0.2f, gameObject.transform.localScale.y + 0.2f, gameObject.transform.localScale.z + 0.2f);
         Debug.Log("Gaze entered");
     }
 

@@ -13,7 +13,6 @@ public class GeografiaManager : MonoBehaviour
     GameObject[] _comunidad= new GameObject[19];
     GameObject[] _posComunidad= new GameObject[19];
 
-    private int correctos = 0;
     private int acolocar = 17; //19 con ceuta y melilla a hacer 
 
     private string [] _lugares= {"Madrid", "Catalunya", "cValenciana","Andalucia",
@@ -42,7 +41,7 @@ public class GeografiaManager : MonoBehaviour
     void Start()
     {
 
-        cuantos.GetComponent<Text>().text = correctos + "/" + acolocar;
+        cuantos.GetComponent<Text>().text = 0 + "/" + acolocar;
 
         for (int i = 0; i < _lugares.Length; i++) {
              if(GameObject.Find(_lugares[i]) != null)
@@ -63,8 +62,7 @@ public class GeografiaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        comprobarCorrectos();
+        
 
         for (int i = 0; i < _lugares.Length; i++) {
 
@@ -93,20 +91,10 @@ public class GeografiaManager : MonoBehaviour
                 }
             }
         }
-        Debug.Log(correctos);
         changePosicionSelect(false);
     }
 
-    public void comprobarCorrectos() {
 
-        if (correctos == acolocar)
-        {
-            Debug.Log("FIN ");//INSERTAR SONIDO FINAL
-            //sonido bien y cambiar texto
-            res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
-
-        }
-    }
 
     public void changePosicionSelect(bool a) {
         for (int j = 0; j < _posiciones.Length; j++)
@@ -144,11 +132,36 @@ public class GeografiaManager : MonoBehaviour
     }
 
     public void intercambioCorrecto() {
- 
-        correctos++;
+
+        int correctos = 0;
+
+
+        for (int j = 0; j < _lugares.Length; j++)
+        {
+            GameObject b = GameObject.Find(_lugares[j]);
+            if (b != null)
+            {
+                if (b.GetComponent<Seleccionable>().next == "Correcto") {
+                    Debug.Log("next correcto" + correctos);
+                    correctos++; }
+            }
+
+        }
+
+        if (correctos == acolocar)
+        {
+            Debug.Log("FIN ");//INSERTAR SONIDO FINAL
+                              //sonido bien y cambiar texto
+            res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
+
+        }else {
+            res.GetComponent<Text>().text = "Posición correcta";
+        }
+
+
         Debug.Log("Correcto " + correctos);//INSERTAR SONIDO FALLO
         cuantos.GetComponent<Text>().text = correctos + "/" + acolocar;
-        res.GetComponent<Text>().text = "Posición correcta";
+        
     }
 
     //provisional
@@ -162,7 +175,7 @@ public class GeografiaManager : MonoBehaviour
             }
             else if(a.name == "IslasBaleares")
             {
-                a.transform.position = new Vector3(8.5f, -1.5f, -0.7f);
+                a.transform.localPosition = new Vector3(8.5f, -1.5f, -0.7f);
             }
             else
             {
@@ -171,6 +184,7 @@ public class GeografiaManager : MonoBehaviour
             
             a.GetComponent<Seleccionable>().type = 0;
             a.GetComponent<Seleccionable>().ChangeSelect(false);
+            a.GetComponent<Seleccionable>().next = "Correcto";
             Destroy(a.transform.GetChild(0).gameObject);
             Destroy(b.transform.GetChild(0).gameObject);
             Debug.Log("Antes intercambio");
