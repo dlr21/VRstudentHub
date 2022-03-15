@@ -73,19 +73,19 @@ public class EnglishManager : MonoBehaviour
     }
 
     //prueba de que funciona
-    private void netPregunta() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+    private void aux() {
 
-            Debug.Log("espacioooo");
-            preguntaCorrecta();
-        }
     }
 
     public void comprobarCorrecta(int a) {
-        GameObject.Find("Cube").GetComponent<AudioEngl>().music.Stop();
+        GameObject.Find("Cube").GetComponent<AudioEngl>().englSource.Stop();
         if (correcta[npregunta] == a)
         {
             preguntaCorrecta();
+            GameObject.Find("Cube").GetComponent<Audio>().playCorrect();
+        }
+        else {
+            GameObject.Find("Cube").GetComponent<Audio>().playError();
         }
         if (npregunta > correcta.Length) {
             acabado();
@@ -98,7 +98,8 @@ public class EnglishManager : MonoBehaviour
         opcionB.GetComponent<Seleccionable>().type = 0;
         opcionC.GetComponent<Seleccionable>().type = 0;
 
-        respuesta.GetComponent<Text>().text = "Error";
+        respuesta.GetComponent<Text>().text = "Has acabado";
+        GameObject.Find("Cube").GetComponent<Audio>().playFin();
     }
 
     private void preguntaCorrecta()

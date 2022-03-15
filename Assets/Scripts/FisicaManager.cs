@@ -83,7 +83,8 @@ public class FisicaManager : MonoBehaviour
 
         if (aComparar == resultadoFinal)
         {
-            Debug.Log("CORRECTO");//INSERTAR SONIDO ACIERTO
+            Debug.Log("CORRECTO");
+            GameObject.Find("Cube").GetComponent<Audio>().playCorrect();
             SiguientePregunta();
 
         }
@@ -95,7 +96,8 @@ public class FisicaManager : MonoBehaviour
             left.GetComponent<Seleccionable>().ChangeSelect(false);
             right.GetComponent<Seleccionable>().ChangeSelect(false);
 
-            Debug.Log("FALSO");//INSERTAR SONIDO FALLO
+            Debug.Log("FALSO");
+            GameObject.Find("Cube").GetComponent<Audio>().playError();
         }
 
     }
@@ -125,6 +127,7 @@ public class FisicaManager : MonoBehaviour
         {
             res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
             Debug.Log("no mas preguntas");
+            GameObject.Find("Cube").GetComponent<Audio>().playFin();
         }
 
 

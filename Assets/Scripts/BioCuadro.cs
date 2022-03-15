@@ -40,7 +40,12 @@ public class BioCuadro : MonoBehaviour
                 gameObject.GetComponent<Seleccionable>().type = 0;
                 gameObject.GetComponent<Seleccionable>().ChangeSelect(false);
                 Destroy(gameObject.transform.GetChild(0).gameObject);
+                GameObject.Find("Cube").GetComponent<Audio>().playCorrect();
             }
+        }
+        else
+        {
+            GameObject.Find("Cube").GetComponent<Audio>().playError();
         }
         Debug.Log("comparando " + s + " con " + reino+" es "+b);
         return b;

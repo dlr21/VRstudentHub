@@ -67,7 +67,7 @@ public class Seleccionable : MonoBehaviour
     }
 
     public void Select() {
-
+        GameObject.Find("Cube").GetComponent<Audio>().playPop();
         if (type == 1)
         {
             Debug.Log("Select 1 " + next);

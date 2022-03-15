@@ -113,6 +113,7 @@ public class BiologiaManager : MonoBehaviour
             }
         }
         if (colocados == 10) {
+            GameObject.Find("Cube").GetComponent<Audio>().playFin();
             res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
         }
     }

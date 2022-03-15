@@ -132,7 +132,7 @@ public class GeografiaManager : MonoBehaviour
     }
 
     public void intercambioCorrecto() {
-
+        //comprobamos cuantos correctos hay
         int correctos = 0;
 
 
@@ -147,11 +147,11 @@ public class GeografiaManager : MonoBehaviour
             }
 
         }
-
+        //comprobamos si se han colocado todos o no
         if (correctos == acolocar)
         {
-            Debug.Log("FIN ");//INSERTAR SONIDO FINAL
-                              //sonido bien y cambiar texto
+            Debug.Log("FIN ");
+            GameObject.Find("Cube").GetComponent<Audio>().playFin();
             res.GetComponent<Text>().text = "Has superado el ejercicio con éxito";
 
         }else {
@@ -159,7 +159,7 @@ public class GeografiaManager : MonoBehaviour
         }
 
 
-        Debug.Log("Correcto " + correctos);//INSERTAR SONIDO FALLO
+        Debug.Log("Correcto " + correctos);
         cuantos.GetComponent<Text>().text = correctos + "/" + acolocar;
         
     }
@@ -189,11 +189,13 @@ public class GeografiaManager : MonoBehaviour
             Destroy(b.transform.GetChild(0).gameObject);
             Debug.Log("Antes intercambio");
             intercambioCorrecto();
+            GameObject.Find("Cube").GetComponent<Audio>().playCorrect();
             Debug.Log("Tras intercambio");
 
         }
         else {
             Debug.Log("FALSO");//INSERTAR SONIDO FALLO
+            GameObject.Find("Cube").GetComponent<Audio>().playError();
             res.GetComponent<Text>().text = "Posición incorrecta";
 
         }

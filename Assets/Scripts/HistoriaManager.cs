@@ -51,7 +51,8 @@ public class HistoriaManager : MonoBehaviour
             cuantos.GetComponent<Text>().text = resueltos + "/" + totalCorrectas[npregunta];
             res.GetComponent<Text>().text = "ACIERTO";
 
-            Debug.Log("CORRECTO");//INSERTAR SONIDO ACIERTO
+            Debug.Log("CORRECTO");
+            GameObject.Find("Cube").GetComponent<Audio>().playCorrect();
             if (resueltos == totalCorrectas[npregunta]) {
                 SiguientePregunta();
             }
@@ -62,7 +63,8 @@ public class HistoriaManager : MonoBehaviour
         } else
         {
             res.GetComponent<Text>().text = "ERROR";
-            Debug.Log("FALSO");//INSERTAR SONIDO FALLO
+            Debug.Log("FALSO");
+            GameObject.Find("Cube").GetComponent<Audio>().playError();
             return false;
         }
 
@@ -84,6 +86,7 @@ public class HistoriaManager : MonoBehaviour
         else
         {
             res.GetComponent<Text>().text = "FIN";
+            GameObject.Find("Cube").GetComponent<Audio>().playFin();
             Debug.Log("no mas preguntas");
         }
 
