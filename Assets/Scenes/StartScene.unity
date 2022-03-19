@@ -1464,4 +1464,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 8856961487745306409}
-  volume: 0.5

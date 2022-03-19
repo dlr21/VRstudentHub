@@ -8,15 +8,14 @@ public class Audio : MonoBehaviour
 
     public AudioSource music;
     private AudioClip[] audioClips=new AudioClip[4];
-    public float volume;
 
     //audio para musica, acierto, error
     void Awake()
     {
-        audioClips[0] = Resources.Load<AudioClip>("Audio/Cositas/button_002");
-        audioClips[1] = Resources.Load<AudioClip>("Audio/Cositas/send");
-        audioClips[2] = Resources.Load<AudioClip>("Audio/Cositas/alert");
-        audioClips[3] = Resources.Load<AudioClip>("Audio/Cositas/alert");
+        audioClips[0] = Resources.Load<AudioClip>("Audio/Cositas/Error"); //error
+        audioClips[1] = Resources.Load<AudioClip>("Audio/Cositas/Correct");//correct
+        audioClips[2] = Resources.Load<AudioClip>("Audio/Cositas/Pop");//pop
+        audioClips[3] = Resources.Load<AudioClip>("Audio/Cositas/Fin");//fin
     }
 
     // Start is called before the first frame update
@@ -37,20 +36,20 @@ public class Audio : MonoBehaviour
     }
 
     public void playError() {
-        music.PlayOneShot(audioClips[0], volume);
+        music.PlayOneShot(audioClips[0], 1);
     }
 
     public void playCorrect()
     {
-        music.PlayOneShot(audioClips[1], volume);
+        music.PlayOneShot(audioClips[1], 1);
     }
 
     public void playPop()
     {
-        music.PlayOneShot(audioClips[2], volume);
+        music.PlayOneShot(audioClips[2], 1);
     }
     public void playFin()
     {
-        music.PlayOneShot(audioClips[3], volume);
+        music.PlayOneShot(audioClips[3], 1);
     }
 }
