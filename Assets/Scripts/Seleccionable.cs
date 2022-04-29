@@ -54,8 +54,16 @@ public class Seleccionable : MonoBehaviour
 
     public void OnGazeEnter()
     {
+
         focus = true;
-        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x+0.5f, gameObject.transform.localScale.y + 0.5f, gameObject.transform.localScale.z+ 0.5f);
+        if (name != "AudioBoton")
+        {
+            gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x + 0.5f, gameObject.transform.localScale.y + 0.5f, gameObject.transform.localScale.z + 0.5f);
+        }
+        else {
+            gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x + 0.2f, gameObject.transform.localScale.y + 0.2f, gameObject.transform.localScale.z);
+        }
+       
     }
     
 
