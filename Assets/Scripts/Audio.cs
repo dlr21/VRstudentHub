@@ -18,11 +18,6 @@ public class Audio : MonoBehaviour
         audioClips[3] = Resources.Load<AudioClip>("Audio/Cositas/Fin");//fin
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

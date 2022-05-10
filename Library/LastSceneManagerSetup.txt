@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/EnglScene.unity
+- path: Assets/Scenes/GeolScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

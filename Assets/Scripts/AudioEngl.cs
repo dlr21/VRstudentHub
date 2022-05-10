@@ -9,22 +9,7 @@ public class AudioEngl : MonoBehaviour
     public AudioClip[] englClips;
     public float volume;
 
-    void Awake()
-    {
-        
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void PlayQuestion(int a)
     {

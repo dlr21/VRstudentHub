@@ -16,8 +16,6 @@ public class RotacionCabeza : MonoBehaviour
     void Update()
     {
 
-
-
         //Obtiene datos del giroscopio
         Quaternion att = Input.gyro.attitude;
         //Reoriente los datos del giroscoopio para la pantalla
