@@ -18,7 +18,7 @@ public class Seleccionable : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 previousForm;
 
-    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino//7 cuadro//8 audio ingles//
+    public int type;//1 nextScene //2 drag //3 selection //4 seleccionPermanente //5 //desseleccionar en geografia //6 activar reino//7 cuadro//8 audio ingles//9 audio ingles//10 volcan
 
     public string next;
 
@@ -56,7 +56,12 @@ public class Seleccionable : MonoBehaviour
     {
 
         focus = true;
-        if (name != "AudioBoton")
+
+        if (GameObject.Find("nombreVolcan")) {
+            GameObject.Find("nombreVolcan").GetComponent<Text>().text = this.name;
+        }
+
+        if (name != "AudioBoton" && name != "Manto")
         {
             gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x + 0.5f, gameObject.transform.localScale.y + 0.5f, gameObject.transform.localScale.z + 0.5f);
         }
@@ -113,6 +118,10 @@ public class Seleccionable : MonoBehaviour
         {
             Debug.Log("Select 9");
             GameObject.Find("Cube").GetComponent<EnglishManager>().comprobarCorrecta(int.Parse(next));
+        }else if (type == 10)
+        {
+            Debug.Log("Select 10");
+            GameObject.Find("Cube").GetComponent<GeologiaManager>().comprobarOpcion(this.name);
         }
 
     }
