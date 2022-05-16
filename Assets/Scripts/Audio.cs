@@ -19,16 +19,7 @@ public class Audio : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
 
-            Debug.Log("espacioooo");
-            playError();
-        }
-    }
 
     public void playError() {
         music.PlayOneShot(audioClips[0], 1);

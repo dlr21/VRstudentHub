@@ -6,16 +6,15 @@ using UnityEngine.UI;
 public class GeologiaManager : MonoBehaviour
 {
 
-    private string[] opcionCorrecta = { "CamaraMagmatica", "Chimenea", "Cono","Corteza", "manto" };
+    private string[] opcionCorrecta = { "CamaraMagmatica", "Chimenea", "Cono","Corteza", "Manto" };
     private string[] descripciones = { "Es la zona donde se almacena el magma (roca fundida) proveniente del manto," +
             " el cual posteriormente es expulsado a la superficie en forma de erupción volcánica.",
         "Es el conducto por donde asciende el magma hasta llegar al cráter." +
-            " Durante su ascenso el magma puede arrancar rocas de las paredes de la chimenea e incorporarlos, para luego ser expulsados a la superficie.",
-        "La formación de origen volcánica situada en la boca del volcán desde donde emana el magma y entra en contacto con la hidrosfera o la atmósfera. " +
-            "Al expulsar la lava, esta suele amontonarse en forma de cono con una apertura o cráter central.",
+            " Durante su ascenso el magma puede arrancar rocas de las paredes, para luego ser expulsados a la superficie.",
+        "La formación de origen volcánica situada en la boca del volcán desde donde emana el magma y entra en contacto con la hidrosfera o la atmósfera. ",
         "Es una capa rígida de poco espesor cuya parte superior, la litosfera, se encuentra dividida en placas tectónicas. " +
             "En las zonas de contacto de estas placas ocurren las erupciones volcánicas, terremotos y otros fenómenos geológicos.",
-        "Es una capa interna de los planetas terrestres o de algunos otros cuerpos planetarios rocosos, " +
+        "Es una capa interna de los planetas terrestres, " +
             "como la que se encuentran entre el núcleo, la capa más interna, y la corteza, la más externa." };
 
     private GameObject descripcion;
