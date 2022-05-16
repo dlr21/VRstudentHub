@@ -18,11 +18,15 @@ public class Audio : MonoBehaviour
         audioClips[3] = Resources.Load<AudioClip>("Audio/Cositas/Fin");//fin
     }
 
-
+    public void Update()
+    {
+        /*if(Input.anyKeyDown)
+            playError();*/
+    }
 
 
     public void playError() {
-        music.PlayOneShot(audioClips[0], 1);
+        music.PlayOneShot(audioClips[0], 3);
     }
 
     public void playCorrect()
@@ -32,10 +36,10 @@ public class Audio : MonoBehaviour
 
     public void playPop()
     {
-        music.PlayOneShot(audioClips[2], 1);
+        music.PlayOneShot(audioClips[2], 3);
     }
     public void playFin()
     {
-        music.PlayOneShot(audioClips[3], 1);
+        music.PlayOneShot(audioClips[3], 7);
     }
 }

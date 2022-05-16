@@ -12,8 +12,8 @@ public class GeologiaManager : MonoBehaviour
         "Es el conducto por donde asciende el magma hasta llegar al cráter." +
             " Durante su ascenso el magma puede arrancar rocas de las paredes, para luego ser expulsados a la superficie.",
         "La formación de origen volcánica situada en la boca del volcán desde donde emana el magma y entra en contacto con la hidrosfera o la atmósfera. ",
-        "Es una capa rígida de poco espesor cuya parte superior, la litosfera, se encuentra dividida en placas tectónicas. " +
-            "En las zonas de contacto de estas placas ocurren las erupciones volcánicas, terremotos y otros fenómenos geológicos.",
+        "Es una capa rígida de poco espesor cuya parte superior se encuentra dividida en placas tectónicas. " +
+            "En las zonas de contacto de estas placas ocurren las erupciones volcánicas y otros fenómenos geológicos.",
         "Es una capa interna de los planetas terrestres, " +
             "como la que se encuentran entre el núcleo, la capa más interna, y la corteza, la más externa." };
 
@@ -27,23 +27,24 @@ public class GeologiaManager : MonoBehaviour
     private void Awake()
     {
         descripcion = GameObject.Find("Ejercicio");
-        nombre = GameObject.Find("Pregunta");
+        nombre = GameObject.Find("Respuesta");
     }
 
     void Start()
     {
         descripcion.GetComponent<Text>().text = descripciones[npregunta];
-        nombre.GetComponent<Text>().text = "";
+        nombre.GetComponent<Text>().text = "Descripción";
     }
 
 
 
     void siguientePregunta()
     {
-        Debug.Log("correcta");
         npregunta++;
-
-        descripcion.GetComponent<Text>().text = descripciones[npregunta];
+        if (npregunta < descripciones.Length)
+        {
+            descripcion.GetComponent<Text>().text = descripciones[npregunta];
+        }
     }
 
     public bool comprobarOpcion(string s) {
@@ -51,11 +52,12 @@ public class GeologiaManager : MonoBehaviour
 
             siguientePregunta();
 
-            if (npregunta > opcionCorrecta.Length)
+            if (npregunta >= opcionCorrecta.Length)
             {
                 fin();
             }
             GameObject.Find("Cube").GetComponent<Audio>().playCorrect();
+
 
             return true;
         }
