@@ -2427,7 +2427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67bcd3bc3e388d4cae1987a2b1db342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctPosition: {x: -12.08, y: 1.61, z: -10.06}
+  correctPosition: {x: -11.92, y: 1.61, z: -10.9}
   correctRotation: {x: -90, y: 0, z: 45}
   reino: Vegetal
   colocado: 0
@@ -6054,11 +6054,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ea765cb44447094ab0aef02257cb821, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000005066395
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ea765cb44447094ab0aef02257cb821, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000005066395
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ea765cb44447094ab0aef02257cb821, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6115,7 +6115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67bcd3bc3e388d4cae1987a2b1db342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctPosition: {x: -10.01, y: 1.61, z: -12.04}
+  correctPosition: {x: -9.62, y: 1.61, z: -12.52}
   correctRotation: {x: -90, y: 0, z: 45}
   reino: Vegetal
   colocado: 0
